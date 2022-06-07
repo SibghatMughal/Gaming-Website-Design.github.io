@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game-design-website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="Stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png" alt="Game Warrior Logo" /></a>
+                </div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="login-register-button">Login / Register</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero-image">
+                <div class="hero-marketing-text">
+                    <h1>The Best <span>Games</span> Out There</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </h5>
+                    <button>Read More</button>
+                </div>
+            </section>
+
+            <section id="latest-news">
+                <div class="flex">
+                    <h5>Latest Games News</h5>
+                    <div id="latest-news-container">
+                        <div class="latest-news-item">
+                            <span class="badge new">recent</span>
+                            <span class="latest-news-text">Lorem ipsum dolor sit amet, consectectur adipiscing elit ipsum.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="game-types-boxes">
+                <div class="flex">
+                    <div class="box new">
+                        <div class="shade"></div>
+                        <span class="badge new">trending</span>
+                        <div class="contents">
+                            <h4>the new trending games to play</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box strategy">
+                        <div class="shade"></div>
+                        <span class="badge strategy">trending 1</span>
+                        <div class="contents">
+                            <h4>the new trending games to play</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box rpg">
+                        <div class="shade"></div>
+                        <span class="badge rpg">trending 2</span>
+                        <div class="contents">
+                            <h4>the new trending games to play</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box racing">
+                        <div class="shade"></div>
+                        <span class="badge racing">trending 3</span>
+                        <div class="contents">
+                            <h4>the new trending games to play</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-games">
+                <h1>Recent Release</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="badge new">New</span>
+                        <img src="data:image/jpeg;base64,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" />
+                        <div class="box-lower-section">
+                            <h4>New Release games becoming Hot</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem ipsum dolor sit amet.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge racing">Adventure</span>
+                        <img src="https://fictionhorizon.com/wp-content/uploads/2021/09/50-Best-Video-Game-Characters-of-All-Time-2021-Updated-00.jpg" />
+                        <div class="box-lower-section">
+                            <h4>New Release games becoming Hot</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem ipsum dolor sit amet.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge adventure">Mission Impossible</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUAARqnASZxdv8MttqJJ_EUNVevdpnbd4yfA&usqp=CAU" />
+                        <div class="box-lower-section">
+                            <h4>New Release games becoming Hot</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem ipsum dolor sit amet.</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tournaments">
+                <div class="flex">
+                    <span class="badge tournaments">Tournaments</span>
+                    <div class="box">
+                        <span class="badge premium-tournament">New Year Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_1.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>Starcraft 2</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 25, 2021</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 09, 2021</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place $5000, 2nd place: $2000, 3rd place: $1000</label></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge premium-tournament">New Year Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_2.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>World Of Warcraft</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 28, 2021</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 07, 2021</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place $5000, 2nd place: $2000, 3rd place: $1000</label></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-reviews">
+                <h1>Recent Reviews</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="rating-badge gold">9.3</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_1.jpg" />
+                        </div>
+                        <div>
+                            <h4>Assasin's Creed</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge purple">9.5</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_2.jpg" />
+                        </div>
+                        <div>
+                            <h4>Doom</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge green">9.1</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_3.jpg" />
+                        </div>
+                        <div>
+                            <h4>Overwatch</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge violet">9.7</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_4.jpg" />
+                        </div>
+                        <div>
+                            <h4>GTA</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="posts-comments">
+                <div class="flex">
+                    <div class="game-warrior">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/footer_logo.png" />
+                        <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        <img class="footer-graphic" src="https://onclickwebdesign.com/wp-content/uploads/sword_lady_footer.png" />
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Latest Posts</h3>
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_1.jpg" />
+                            <div>
+                                <h5>June 21, 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_2.jpg" />
+                            <div>
+                                <h5>June 21, 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_3.jpg" />
+                            <div>
+                                <h5>June 21, 2022</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Top Comments</h3>
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_1.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2021</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_2.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2021</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_3.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2021</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_4.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2021</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex">
+                <small>Copyright &copy; 2021 All rights reserved | This template is made with <span class="footer-heart">&#9829;</span> by (SIBGHAT MUGHAL)</small>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Forums</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+    </body>
+</html>
